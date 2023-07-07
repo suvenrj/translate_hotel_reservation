@@ -12,7 +12,7 @@
     "RateMemcAddress": "memcached-rate:11211",
     "RecommendPort": "50051",
     "RecommendIP": "127.0.0.1",
-    "RecommendMongoAddress": "mongodb+srv://suvenjagtiani:<password>@cluster0.oxqritw.mongodb.net/?retryWrites=true&w=majority",
+    "RecommendMongoAddress": "mongodb://127.0.0.1:8091",
     "ReservePort": "8087",
     "ReserveMongoAddress": "mongodb-reservation:27017",
     "ReserveMemcAddress": "memcached-reserve:11211",

@@ -6,6 +6,9 @@ class Hotel(Document):
    HLon = FloatField()
    HRate = FloatField()
    HPrice = FloatField()
+#    meta = {
+#         'collection': 'recommendation'
+#     }
    def _init__(self, id, lat, lon, rate, price):
        self.HId=id
        self.HLat=lat
@@ -14,7 +17,7 @@ class Hotel(Document):
        self.HPrice=price
 
 def initializeDatabase(url):
-    session = connect('HotelReservation', host=url)
+    session = connect('recommendation-db', host=url)
     if (not Hotel.objects(HId = "1")):
         h=Hotel(HId = "1", HLat=37.7867, HLon= -122.4112, HRate= 109.00, HPrice=150.00)
         try:
